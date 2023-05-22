@@ -17,6 +17,7 @@ Increment the word with length of the word.
 Print the number of words in text. 
 
 ## PROGRAM:
+```
 '''
 Program to count the words in a file
 Devoloped by: Keerthi Vasan A
@@ -30,7 +31,7 @@ with open(fname,'r') as f:
     words = line.split()
     num_words+=len(words)
 print('Number of words: ',num_words)
-
+```
 ### OUTPUT:
 ![Screenshot (163)](https://github.com/Keerthi-Vasan-Adhithan/Word-count/assets/107488929/4485cc7e-215e-47ab-941e-749a18c47cc3)
 
