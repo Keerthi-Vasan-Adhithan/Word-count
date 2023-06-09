@@ -6,34 +6,47 @@ PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
-Assign value for num_word
+Create a file with .txt file extension.
+
 ### Step 2: 
-Open the file in read mode.
+Add some texts in that file.
+ 
 ### Step 3: 
-Iterate using for loop.
-### Step 4:  
-Increment the word with length of the word.
+Create a python file.
+
+### Step 4: 
+Write a code to count the number of words in that file.
+
 ### Step 5: 
-Print the number of words in text. 
+Run the program.
+
+### Step 6: 
+Display the output.
 
 ## PROGRAM:
 ```
 '''
-Program to count the words in a file
-Devoloped by: Keerthi Vasan A
-Register Number: 212222240048
+ Program to count the number of the words in a file 
+ Devoloped by : KEERTHI VASAN A
+ Register Number : 212222240048
 '''
-fname=input("Enter thr file name: ")
-num_words = 0
-
-with open(fname,'r') as f:
-  for line in f:
-    words = line.split()
-    num_words+=len(words)
-print('Number of words: ',num_words)
+def program():
+    count=0
+    with open("text.txt","r") as f:
+        for data in f:
+            words=data.split()
+            for word in words:
+                count+=1
+    print("Total number of words:",count)
+program()
 ```
+
 ### OUTPUT:
-![Screenshot (163)](https://github.com/Keerthi-Vasan-Adhithan/Word-count/assets/107488929/4485cc7e-215e-47ab-941e-749a18c47cc3)
+
+![up1](https://github.com/arhamshajahan/Word-count/assets/127313881/af383a40-fe17-4ec7-9f60-0234ac02a5dd)
+
+![up2](https://github.com/arhamshajahan/Word-count/assets/127313881/2262b99d-f7f1-467c-9c1d-567acf16b14f)
+
 
 ## RESULT:
 Thus the program is written to find the word count from a text.
